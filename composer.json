@@ -1,0 +1,39 @@
+{
+    "name": "jin_seebo/adapto_panichd",
+    "description": "Ticketing system installable in any Laravel 5.1+ project. It includes a set of common features like file attachments, ticket tags, filtering, scheduling and e-mail notifications.",
+    "type": "laravel-package",
+    "keywords": ["ticketing-system", "helpdesk-ticketing", "laravel", "laravel-package", "laravel-5-package"],
+    "require": {
+        "laravel/framework": "^5.1|^6.0",
+        "laravelcollective/html": "^5.1|^6.0",
+        "illuminate/support": "^5.1|^6.0",
+		"intervention/image": "^2.5",
+        "yajra/laravel-datatables-oracle": "^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "jenssegers/date": "^3.0",
+        "mews/purifier": "^2.0|^3.1",
+        "doctrine/dbal": "^2.10"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ManelGP",
+            "email": "manelgp-email-here@gmail.com"
+        },
+        {
+            "name": "XaviQV",
+            "email": "xaviqv@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PanicHD\\PanicHD\\": "src"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"PanicHD\\PanicHD\\PanicHDServiceProvider"
+			]
+		}
+	}
+}
